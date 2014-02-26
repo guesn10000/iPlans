@@ -7,21 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1863CB5318BC3C4E00C95CCD /* JCAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863CB4E18BC3C4E00C95CCD /* JCAlert.m */; };
+		1863CB5418BC3C4E00C95CCD /* JCFilePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863CB5018BC3C4E00C95CCD /* JCFilePersistence.m */; };
+		1863CB5518BC3C4E00C95CCD /* JCTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863CB5218BC3C4E00C95CCD /* JCTimer.m */; };
+		188FD12D18BDA50700AFAFDA /* TasksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD12C18BDA50700AFAFDA /* TasksManager.m */; };
+		188FD13018BDAB7600AFAFDA /* JCTimer+Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD12F18BDAB7600AFAFDA /* JCTimer+Clock.m */; };
+		188FD1BD18BDD43F00AFAFDA /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1BC18BDD43F00AFAFDA /* AddTaskViewController.m */; };
+		188FD1C118BDF64200AFAFDA /* TasksEveryDay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1C018BDF64200AFAFDA /* TasksEveryDay.plist */; };
+		188FD1C718BE0B6F00AFAFDA /* MyTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1C618BE0B6F00AFAFDA /* MyTasksViewController.m */; };
+		188FD1CE18BE0D6B00AFAFDA /* ForegroundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1CD18BE0D6B00AFAFDA /* ForegroundCell.m */; };
+		188FD1D118BE0D7700AFAFDA /* BackgroundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1D018BE0D7700AFAFDA /* BackgroundCell.m */; };
+		188FD1DA18BE154C00AFAFDA /* Black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D318BE154C00AFAFDA /* Black.jpg */; };
+		188FD1DB18BE154C00AFAFDA /* Green.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D418BE154C00AFAFDA /* Green.jpg */; };
+		188FD1DC18BE154C00AFAFDA /* Green1.png in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D518BE154C00AFAFDA /* Green1.png */; };
+		188FD1DD18BE154C00AFAFDA /* Jymn_Chen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D618BE154C00AFAFDA /* Jymn_Chen.jpg */; };
+		188FD1DF18BE154C00AFAFDA /* Red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D818BE154C00AFAFDA /* Red.jpg */; };
+		188FD1E018BE154C00AFAFDA /* White.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D918BE154C00AFAFDA /* White.jpg */; };
+		188FD1E318BE190A00AFAFDA /* MyTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1E218BE190A00AFAFDA /* MyTask.m */; };
+		188FD1E618BE1A5600AFAFDA /* AddMyTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1E518BE1A5600AFAFDA /* AddMyTaskViewController.m */; };
+		188FD1EB18BE1ECA00AFAFDA /* MyTasksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1EA18BE1ECA00AFAFDA /* MyTasksManager.m */; };
+		188FF72A18BCB0EF0011604F /* DoingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FF72918BCB0EF0011604F /* DoingCell.m */; };
+		188FF72E18BCB1870011604F /* FinishedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FF72D18BCB1870011604F /* FinishedCell.m */; };
+		188FF7C418BCE16C0011604F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F33EC618BB9C64007D8060 /* Main_iPhone.storyboard */; };
+		188FF7C518BCE16C0011604F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F33EC918BB9C64007D8060 /* Main_iPad.storyboard */; };
+		18D1176018BBA3E000D392F5 /* TaskNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18D1175F18BBA3E000D392F5 /* TaskNames.plist */; };
+		18D1176318BBA44A00D392F5 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D1176218BBA44A00D392F5 /* Task.m */; };
 		18F33EB518BB9C64007D8060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F33EB418BB9C64007D8060 /* Foundation.framework */; };
 		18F33EB718BB9C64007D8060 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F33EB618BB9C64007D8060 /* CoreGraphics.framework */; };
 		18F33EB918BB9C64007D8060 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F33EB818BB9C64007D8060 /* UIKit.framework */; };
 		18F33EBF18BB9C64007D8060 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18F33EBD18BB9C64007D8060 /* InfoPlist.strings */; };
-		18F33EC118BB9C64007D8060 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F33EC018BB9C64007D8060 /* main.m */; };
-		18F33EC518BB9C64007D8060 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F33EC418BB9C64007D8060 /* AppDelegate.m */; };
-		18F33EC818BB9C64007D8060 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F33EC618BB9C64007D8060 /* Main_iPhone.storyboard */; };
-		18F33ECB18BB9C64007D8060 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F33EC918BB9C64007D8060 /* Main_iPad.storyboard */; };
-		18F33ECE18BB9C64007D8060 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F33ECD18BB9C64007D8060 /* ViewController.m */; };
 		18F33ED018BB9C64007D8060 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F33ECF18BB9C64007D8060 /* Images.xcassets */; };
 		18F33ED718BB9C64007D8060 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F33ED618BB9C64007D8060 /* XCTest.framework */; };
 		18F33ED818BB9C64007D8060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F33EB418BB9C64007D8060 /* Foundation.framework */; };
 		18F33ED918BB9C64007D8060 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F33EB818BB9C64007D8060 /* UIKit.framework */; };
 		18F33EE118BB9C64007D8060 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18F33EDF18BB9C64007D8060 /* InfoPlist.strings */; };
 		18F33EE318BB9C64007D8060 /* iPlansTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F33EE218BB9C64007D8060 /* iPlansTests.m */; };
+		18F33EFA18BBA142007D8060 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F33EC418BB9C64007D8060 /* AppDelegate.m */; };
+		18F33EFB18BBA142007D8060 /* TasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F33EED18BB9F29007D8060 /* TasksViewController.m */; };
+		18F33EFE18BBA19D007D8060 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F33EC018BB9C64007D8060 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +58,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1863CB4D18BC3C4E00C95CCD /* JCAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAlert.h; sourceTree = "<group>"; };
+		1863CB4E18BC3C4E00C95CCD /* JCAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAlert.m; sourceTree = "<group>"; };
+		1863CB4F18BC3C4E00C95CCD /* JCFilePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCFilePersistence.h; sourceTree = "<group>"; };
+		1863CB5018BC3C4E00C95CCD /* JCFilePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCFilePersistence.m; sourceTree = "<group>"; };
+		1863CB5118BC3C4E00C95CCD /* JCTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTimer.h; sourceTree = "<group>"; };
+		1863CB5218BC3C4E00C95CCD /* JCTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTimer.m; sourceTree = "<group>"; };
+		188FD12B18BDA50700AFAFDA /* TasksManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksManager.h; sourceTree = "<group>"; };
+		188FD12C18BDA50700AFAFDA /* TasksManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksManager.m; sourceTree = "<group>"; };
+		188FD12E18BDAB7600AFAFDA /* JCTimer+Clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JCTimer+Clock.h"; sourceTree = "<group>"; };
+		188FD12F18BDAB7600AFAFDA /* JCTimer+Clock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JCTimer+Clock.m"; sourceTree = "<group>"; };
+		188FD1BB18BDD43F00AFAFDA /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		188FD1BC18BDD43F00AFAFDA /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		188FD1C018BDF64200AFAFDA /* TasksEveryDay.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = TasksEveryDay.plist; sourceTree = "<group>"; };
+		188FD1C518BE0B6F00AFAFDA /* MyTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTasksViewController.h; sourceTree = "<group>"; };
+		188FD1C618BE0B6F00AFAFDA /* MyTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTasksViewController.m; sourceTree = "<group>"; };
+		188FD1CC18BE0D6B00AFAFDA /* ForegroundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundCell.h; sourceTree = "<group>"; };
+		188FD1CD18BE0D6B00AFAFDA /* ForegroundCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundCell.m; sourceTree = "<group>"; };
+		188FD1CF18BE0D7700AFAFDA /* BackgroundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundCell.h; sourceTree = "<group>"; };
+		188FD1D018BE0D7700AFAFDA /* BackgroundCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundCell.m; sourceTree = "<group>"; };
+		188FD1D318BE154C00AFAFDA /* Black.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Black.jpg; sourceTree = "<group>"; };
+		188FD1D418BE154C00AFAFDA /* Green.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Green.jpg; sourceTree = "<group>"; };
+		188FD1D518BE154C00AFAFDA /* Green1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green1.png; sourceTree = "<group>"; };
+		188FD1D618BE154C00AFAFDA /* Jymn_Chen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jymn_Chen.jpg; sourceTree = "<group>"; };
+		188FD1D818BE154C00AFAFDA /* Red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Red.jpg; sourceTree = "<group>"; };
+		188FD1D918BE154C00AFAFDA /* White.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = White.jpg; sourceTree = "<group>"; };
+		188FD1E118BE190A00AFAFDA /* MyTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTask.h; sourceTree = "<group>"; };
+		188FD1E218BE190A00AFAFDA /* MyTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTask.m; sourceTree = "<group>"; };
+		188FD1E418BE1A5600AFAFDA /* AddMyTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMyTaskViewController.h; sourceTree = "<group>"; };
+		188FD1E518BE1A5600AFAFDA /* AddMyTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMyTaskViewController.m; sourceTree = "<group>"; };
+		188FD1E918BE1ECA00AFAFDA /* MyTasksManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTasksManager.h; sourceTree = "<group>"; };
+		188FD1EA18BE1ECA00AFAFDA /* MyTasksManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTasksManager.m; sourceTree = "<group>"; };
+		188FF72818BCB0EF0011604F /* DoingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoingCell.h; sourceTree = "<group>"; };
+		188FF72918BCB0EF0011604F /* DoingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoingCell.m; sourceTree = "<group>"; };
+		188FF72C18BCB1870011604F /* FinishedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishedCell.h; sourceTree = "<group>"; };
+		188FF72D18BCB1870011604F /* FinishedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishedCell.m; sourceTree = "<group>"; };
+		18B0A6B318BCE69600255C89 /* AppMarcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMarcos.h; sourceTree = "<group>"; };
+		18B0A6B418BCF03E00255C89 /* FileMarcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileMarcos.h; sourceTree = "<group>"; };
+		18D1175F18BBA3E000D392F5 /* TaskNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TaskNames.plist; sourceTree = "<group>"; };
+		18D1176118BBA44A00D392F5 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		18D1176218BBA44A00D392F5 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		18F33EB118BB9C64007D8060 /* iPlans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPlans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F33EB418BB9C64007D8060 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18F33EB618BB9C64007D8060 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,14 +110,14 @@
 		18F33EC418BB9C64007D8060 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18F33EC718BB9C64007D8060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		18F33ECA18BB9C64007D8060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		18F33ECC18BB9C64007D8060 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18F33ECD18BB9C64007D8060 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18F33ECF18BB9C64007D8060 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18F33ED518BB9C64007D8060 /* iPlansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPlansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F33ED618BB9C64007D8060 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		18F33EDE18BB9C64007D8060 /* iPlansTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPlansTests-Info.plist"; sourceTree = "<group>"; };
 		18F33EE018BB9C64007D8060 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18F33EE218BB9C64007D8060 /* iPlansTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPlansTests.m; sourceTree = "<group>"; };
+		18F33EEC18BB9F29007D8060 /* TasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksViewController.h; sourceTree = "<group>"; };
+		18F33EED18BB9F29007D8060 /* TasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +144,127 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1863CB5618BC3C5000C95CCD /* JuliaCore */ = {
+			isa = PBXGroup;
+			children = (
+				1863CB4D18BC3C4E00C95CCD /* JCAlert.h */,
+				1863CB4E18BC3C4E00C95CCD /* JCAlert.m */,
+				1863CB4F18BC3C4E00C95CCD /* JCFilePersistence.h */,
+				1863CB5018BC3C4E00C95CCD /* JCFilePersistence.m */,
+				1863CB5118BC3C4E00C95CCD /* JCTimer.h */,
+				1863CB5218BC3C4E00C95CCD /* JCTimer.m */,
+				188FD12E18BDAB7600AFAFDA /* JCTimer+Clock.h */,
+				188FD12F18BDAB7600AFAFDA /* JCTimer+Clock.m */,
+			);
+			name = JuliaCore;
+			sourceTree = "<group>";
+		};
+		1863CB5718BC3C5F00C95CCD /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				188FD1EC18BE1ECD00AFAFDA /* Daily */,
+				188FD1ED18BE1EDC00AFAFDA /* MyTasks */,
+			);
+			name = Task;
+			sourceTree = "<group>";
+		};
+		1863CB5918BC3CB900C95CCD /* Marcos */ = {
+			isa = PBXGroup;
+			children = (
+				18B0A6B318BCE69600255C89 /* AppMarcos.h */,
+				18B0A6B418BCF03E00255C89 /* FileMarcos.h */,
+			);
+			name = Marcos;
+			sourceTree = "<group>";
+		};
+		188FD1B918BDCDD900AFAFDA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				18F33EC618BB9C64007D8060 /* Main_iPhone.storyboard */,
+				18F33EC918BB9C64007D8060 /* Main_iPad.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		188FD1BA18BDCDE500AFAFDA /* DailyCells */ = {
+			isa = PBXGroup;
+			children = (
+				188FF72818BCB0EF0011604F /* DoingCell.h */,
+				188FF72918BCB0EF0011604F /* DoingCell.m */,
+				188FF72C18BCB1870011604F /* FinishedCell.h */,
+				188FF72D18BCB1870011604F /* FinishedCell.m */,
+			);
+			name = DailyCells;
+			sourceTree = "<group>";
+		};
+		188FD1C818BE0CF500AFAFDA /* TaskCells */ = {
+			isa = PBXGroup;
+			children = (
+				188FD1CC18BE0D6B00AFAFDA /* ForegroundCell.h */,
+				188FD1CD18BE0D6B00AFAFDA /* ForegroundCell.m */,
+				188FD1CF18BE0D7700AFAFDA /* BackgroundCell.h */,
+				188FD1D018BE0D7700AFAFDA /* BackgroundCell.m */,
+			);
+			name = TaskCells;
+			sourceTree = "<group>";
+		};
+		188FD1D218BE152F00AFAFDA /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				188FD1D318BE154C00AFAFDA /* Black.jpg */,
+				188FD1D418BE154C00AFAFDA /* Green.jpg */,
+				188FD1D518BE154C00AFAFDA /* Green1.png */,
+				188FD1D618BE154C00AFAFDA /* Jymn_Chen.jpg */,
+				188FD1D818BE154C00AFAFDA /* Red.jpg */,
+				188FD1D918BE154C00AFAFDA /* White.jpg */,
+			);
+			name = Apple;
+			sourceTree = "<group>";
+		};
+		188FD1E718BE1A5B00AFAFDA /* DailyTasks */ = {
+			isa = PBXGroup;
+			children = (
+				18F33EEC18BB9F29007D8060 /* TasksViewController.h */,
+				18F33EED18BB9F29007D8060 /* TasksViewController.m */,
+				188FD1BB18BDD43F00AFAFDA /* AddTaskViewController.h */,
+				188FD1BC18BDD43F00AFAFDA /* AddTaskViewController.m */,
+			);
+			name = DailyTasks;
+			sourceTree = "<group>";
+		};
+		188FD1E818BE1A6500AFAFDA /* MyTasks */ = {
+			isa = PBXGroup;
+			children = (
+				188FD1C518BE0B6F00AFAFDA /* MyTasksViewController.h */,
+				188FD1C618BE0B6F00AFAFDA /* MyTasksViewController.m */,
+				188FD1E418BE1A5600AFAFDA /* AddMyTaskViewController.h */,
+				188FD1E518BE1A5600AFAFDA /* AddMyTaskViewController.m */,
+			);
+			name = MyTasks;
+			sourceTree = "<group>";
+		};
+		188FD1EC18BE1ECD00AFAFDA /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+				18D1176118BBA44A00D392F5 /* Task.h */,
+				18D1176218BBA44A00D392F5 /* Task.m */,
+				188FD12B18BDA50700AFAFDA /* TasksManager.h */,
+				188FD12C18BDA50700AFAFDA /* TasksManager.m */,
+			);
+			name = Daily;
+			sourceTree = "<group>";
+		};
+		188FD1ED18BE1EDC00AFAFDA /* MyTasks */ = {
+			isa = PBXGroup;
+			children = (
+				188FD1E118BE190A00AFAFDA /* MyTask.h */,
+				188FD1E218BE190A00AFAFDA /* MyTask.m */,
+				188FD1E918BE1ECA00AFAFDA /* MyTasksManager.h */,
+				188FD1EA18BE1ECA00AFAFDA /* MyTasksManager.m */,
+			);
+			name = MyTasks;
+			sourceTree = "<group>";
+		};
 		18F33EA818BB9C64007D8060 = {
 			isa = PBXGroup;
 			children = (
@@ -114,13 +298,11 @@
 		18F33EBA18BB9C64007D8060 /* iPlans */ = {
 			isa = PBXGroup;
 			children = (
-				18F33EC318BB9C64007D8060 /* AppDelegate.h */,
-				18F33EC418BB9C64007D8060 /* AppDelegate.m */,
-				18F33EC618BB9C64007D8060 /* Main_iPhone.storyboard */,
-				18F33EC918BB9C64007D8060 /* Main_iPad.storyboard */,
-				18F33ECC18BB9C64007D8060 /* ViewController.h */,
-				18F33ECD18BB9C64007D8060 /* ViewController.m */,
-				18F33ECF18BB9C64007D8060 /* Images.xcassets */,
+				18F33EF918BBA086007D8060 /* Delegate */,
+				18F33EF818BBA082007D8060 /* Model */,
+				18F33EF718BBA07D007D8060 /* View */,
+				18F33EF618BBA077007D8060 /* Controllers */,
+				18F33EF518BBA06A007D8060 /* Sources */,
 				18F33EBB18BB9C64007D8060 /* Supporting Files */,
 			);
 			path = iPlans;
@@ -153,6 +335,55 @@
 				18F33EDF18BB9C64007D8060 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18F33EF518BBA06A007D8060 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				188FD1D218BE152F00AFAFDA /* Apple */,
+				188FD1C018BDF64200AFAFDA /* TasksEveryDay.plist */,
+				18D1175F18BBA3E000D392F5 /* TaskNames.plist */,
+				18F33ECF18BB9C64007D8060 /* Images.xcassets */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		18F33EF618BBA077007D8060 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				188FD1E718BE1A5B00AFAFDA /* DailyTasks */,
+				188FD1E818BE1A6500AFAFDA /* MyTasks */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		18F33EF718BBA07D007D8060 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				188FD1BA18BDCDE500AFAFDA /* DailyCells */,
+				188FD1C818BE0CF500AFAFDA /* TaskCells */,
+				188FD1B918BDCDD900AFAFDA /* Storyboards */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		18F33EF818BBA082007D8060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1863CB5918BC3CB900C95CCD /* Marcos */,
+				1863CB5618BC3C5000C95CCD /* JuliaCore */,
+				1863CB5718BC3C5F00C95CCD /* Task */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		18F33EF918BBA086007D8060 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				18F33EC318BB9C64007D8060 /* AppDelegate.h */,
+				18F33EC418BB9C64007D8060 /* AppDelegate.m */,
+			);
+			name = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +462,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F33ECB18BB9C64007D8060 /* Main_iPad.storyboard in Resources */,
+				188FF7C418BCE16C0011604F /* Main_iPhone.storyboard in Resources */,
+				188FD1DB18BE154C00AFAFDA /* Green.jpg in Resources */,
+				188FD1E018BE154C00AFAFDA /* White.jpg in Resources */,
+				188FF7C518BCE16C0011604F /* Main_iPad.storyboard in Resources */,
+				188FD1C118BDF64200AFAFDA /* TasksEveryDay.plist in Resources */,
+				188FD1DC18BE154C00AFAFDA /* Green1.png in Resources */,
+				188FD1DD18BE154C00AFAFDA /* Jymn_Chen.jpg in Resources */,
+				18D1176018BBA3E000D392F5 /* TaskNames.plist in Resources */,
+				188FD1DA18BE154C00AFAFDA /* Black.jpg in Resources */,
+				188FD1DF18BE154C00AFAFDA /* Red.jpg in Resources */,
 				18F33ED018BB9C64007D8060 /* Images.xcassets in Resources */,
-				18F33EC818BB9C64007D8060 /* Main_iPhone.storyboard in Resources */,
 				18F33EBF18BB9C64007D8060 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,9 +492,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F33ECE18BB9C64007D8060 /* ViewController.m in Sources */,
-				18F33EC518BB9C64007D8060 /* AppDelegate.m in Sources */,
-				18F33EC118BB9C64007D8060 /* main.m in Sources */,
+				1863CB5418BC3C4E00C95CCD /* JCFilePersistence.m in Sources */,
+				188FF72A18BCB0EF0011604F /* DoingCell.m in Sources */,
+				188FD12D18BDA50700AFAFDA /* TasksManager.m in Sources */,
+				188FD1BD18BDD43F00AFAFDA /* AddTaskViewController.m in Sources */,
+				18F33EFE18BBA19D007D8060 /* main.m in Sources */,
+				1863CB5518BC3C4E00C95CCD /* JCTimer.m in Sources */,
+				188FD1C718BE0B6F00AFAFDA /* MyTasksViewController.m in Sources */,
+				188FD1E618BE1A5600AFAFDA /* AddMyTaskViewController.m in Sources */,
+				1863CB5318BC3C4E00C95CCD /* JCAlert.m in Sources */,
+				18F33EFA18BBA142007D8060 /* AppDelegate.m in Sources */,
+				188FD1EB18BE1ECA00AFAFDA /* MyTasksManager.m in Sources */,
+				188FD13018BDAB7600AFAFDA /* JCTimer+Clock.m in Sources */,
+				188FD1CE18BE0D6B00AFAFDA /* ForegroundCell.m in Sources */,
+				188FF72E18BCB1870011604F /* FinishedCell.m in Sources */,
+				188FD1E318BE190A00AFAFDA /* MyTask.m in Sources */,
+				18F33EFB18BBA142007D8060 /* TasksViewController.m in Sources */,
+				18D1176318BBA44A00D392F5 /* Task.m in Sources */,
+				188FD1D118BE0D7700AFAFDA /* BackgroundCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +728,7 @@
 				18F33EE818BB9C64007D8060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18F33EE918BB9C64007D8060 /* Build configuration list for PBXNativeTarget "iPlansTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +737,7 @@
 				18F33EEB18BB9C64007D8060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

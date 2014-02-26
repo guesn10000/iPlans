@@ -7,12 +7,31 @@
 //
 
 #import "AppDelegate.h"
+#import "TasksManager.h"
+
+#ifdef APP_INITIALIZE
+    #import "Task.h"
+#endif
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+#ifdef APP_INITIALIZE
+    NSArray *array = @[@"早晚刷牙洗脸", @"看CSDN头条", @"CSDN.Blogs", @"看36Kr全部资讯", @"浏览WeiPhone新闻", @"CocoaChina每天关注技术", @"每天学点新技术", @"写新浪博客"];
+    NSMutableArray *tasksArray = [[NSMutableArray alloc] init];
+    for (NSString *name in array) {
+        Task *task = [[Task alloc] initWithName:name Record:@"0" isFinished:NO];
+        [tasksArray addObject:task];
+    }
+    
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:tasksArray];
+    NSString *bundleFilePath = [[NSBundle mainBundle] pathForResource:@"TasksEveryDay" ofType:@"plist"];
+    if (![data writeToFile:bundleFilePath atomically:YES])
+        NSLog(@"Succeed");
+#endif
+    
     return YES;
 }
 							
@@ -35,7 +54,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [[TasksManager defaultManager] verifyTimestamp];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

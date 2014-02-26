@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>早晚刷牙洗脸</key>
+	<string>0</string>
+	<key>看CSDN头条</key>
+	<string>0</string>
+	<key>CSDN.Blogs</key>
+	<string>0</string>
+	<key>看36Kr全部资讯</key>
+	<string>0</string>
+	<key>浏览WeiPhone新闻</key>
+	<string>0</string>
+	<key>CocoaChina每天关注技术</key>
+	<string>0</string>
+	<key>每天学点新技术</key>
+	<string>0</string>
+	<key>写新浪博客</key>
+	<string>0</string>
+</dict>
+</plist>
