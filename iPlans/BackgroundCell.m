@@ -34,7 +34,7 @@
 
 - (IBAction)doTask:(id)sender {
     NSString *rowStr = [NSString stringWithFormat:@"%d", self.row];
-    NSDictionary *userInfo = @{@"Row": rowStr};
+    NSDictionary *userInfo = @{kRow: rowStr};
     [[NSNotificationCenter defaultCenter] postNotificationName:UIMyTaskWillEnterForegroundNotification object:self userInfo:userInfo];
 }
 

@@ -9,7 +9,6 @@
 #import "MyTask.h"
 
 static NSString * const kTaskName  = @"TaskName";
-static NSString * const kTaskState = @"TaskState";
 static NSString * const kTaskImage = @"TaskImage";
 
 @implementation MyTask

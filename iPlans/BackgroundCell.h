@@ -15,8 +15,8 @@
 - (void)configureCellAtRow:(NSUInteger)aRow TaskName:(NSString *)aName;
 
 @property (weak, nonatomic) IBOutlet UIImageView *description_imageView;
-@property (weak, nonatomic) IBOutlet UILabel *taskName_label;
-@property (weak, nonatomic) IBOutlet UIButton *doTask_button;
+@property (weak, nonatomic) IBOutlet UILabel     *taskName_label;
+@property (weak, nonatomic) IBOutlet UIButton    *doTask_button;
 - (IBAction)doTask:(id)sender;
 
 @end

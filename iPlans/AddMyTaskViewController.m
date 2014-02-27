@@ -20,13 +20,7 @@ static NSString * const kPlaceHolder = @"请在这里输入您的任务";
 
 @implementation AddMyTaskViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+#pragma mark - View life cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,18 +38,14 @@ static NSString * const kPlaceHolder = @"请在这里输入您的任务";
     
     self.finishAdding_buttonItem.enabled = NO;
     
-    [self.inputTaskName_textView becomeFirstResponder];
-    self.inputTaskName_textView.text = kPlaceHolder;
-    self.inputTaskName_textView.textColor = LIGHET_GRAY_COLOR;
+    self.inputTaskName_textView.text          = kPlaceHolder;
+    self.inputTaskName_textView.textColor     = LIGHET_GRAY_COLOR;
     self.inputTaskName_textView.selectedRange = NSRangeZero;
+    [self.inputTaskName_textView becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-}
-
-- (IBAction)dismissKeyboard:(id)sender {
-    [self.inputTaskName_textView resignFirstResponder];
 }
 
 #pragma mark - UITextView Delegate
@@ -64,16 +54,16 @@ static NSString * const kPlaceHolder = @"请在这里输入您的任务";
     if ([textView.text isEqualToString:@""]) {
         self.finishAdding_buttonItem.enabled = NO;
         
-        self.inputTaskName_textView.text = kPlaceHolder;
-        self.inputTaskName_textView.textColor = LIGHET_GRAY_COLOR;
+        self.inputTaskName_textView.text          = kPlaceHolder;
+        self.inputTaskName_textView.textColor     = LIGHET_GRAY_COLOR;
         self.inputTaskName_textView.selectedRange = NSRangeZero;
     }
     else if ([textView.text hasSuffix:kPlaceHolder] && ![textView.text isEqualToString:kPlaceHolder]) {
         self.finishAdding_buttonItem.enabled = YES;
         
         self.inputTaskName_textView.textColor = BLACK_COLOR;
-        NSString *tempText = self.inputTaskName_textView.text;
-        NSUInteger textLength = [tempText length];
+        NSString   *tempText   = self.inputTaskName_textView.text;
+        NSUInteger  textLength = [tempText length];
         tempText = [tempText substringToIndex:textLength - kLengthOfPlaceHolder];
         self.inputTaskName_textView.text = tempText;
     }
@@ -114,7 +104,11 @@ static NSString * const kPlaceHolder = @"请在这里输入您的任务";
     }
 }
 
-#pragma mark - Button Actions
+#pragma mark - Actions
+
+- (IBAction)dismissKeyboard:(id)sender {
+    [self.inputTaskName_textView resignFirstResponder];
+}
 
 - (IBAction)finishAddingTask:(id)sender {
     NSUInteger selectedRow = [self.imageIDPicker selectedRowInComponent:0];

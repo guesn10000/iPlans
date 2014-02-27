@@ -7,6 +7,7 @@
 //
 
 #import "TasksViewController.h"
+#import "JCAlert.h"
 #import "Task.h"
 #import "TasksManager.h"
 #import "DoingCell.h"
@@ -21,16 +22,43 @@ static NSString * const kFinishedCellIdentifier = @"FinishedCell";
 
 @implementation TasksViewController
 
-#pragma mark - Initialization
+#pragma mark - View life cycle
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
-    if (self) {
-        [self loadTasksFromFile];
-    }
+    /* 设置界面 */
     
-    return self;
+    self.clearsSelectionOnViewWillAppear = NO;
+    
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+    /* 初始化数据 */
+    
+    [self loadTasksFromFile];
+    
+    
+    /* 开始监听消息 */
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(taskDidFinished:)
+                                                 name:UITaskDidFinishedNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(taskWillRestore:)
+                                                 name:UITaskWillRestoreNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(clockDidReset:)
+                                                 name:UIClockDidResetNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(taskDidAddNew:)
+                                                 name:UINewTaskDidAddNotification
+                                               object:nil];
 }
 
 - (void)loadTasksFromFile {
@@ -54,38 +82,8 @@ static NSString * const kFinishedCellIdentifier = @"FinishedCell";
             self.doingTasks = [[NSMutableArray alloc] init];
         }
         self.finishedTasks = [[NSMutableArray alloc] init];
-        [self updateTasksDataWithRefresh:NO];
+        [self updateTasksData];
     }
-}
-
-#pragma mark - View life cycle
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.clearsSelectionOnViewWillAppear = NO;
-    
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    [self.editButtonItem setTitle:@"编辑"];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(taskDidFinished:)
-                                                 name:UITaskDidFinishedNotification
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(taskWillRestore:)
-                                                 name:UITaskWillRestoreNotification
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(clockDidReset:)
-                                                 name:UIClockDidResetNotification
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(taskDidAddNew:)
-                                                 name:UINewTaskDidAddNotification
-                                               object:nil];
 }
 
 - (void)dealloc {
@@ -103,7 +101,7 @@ static NSString * const kFinishedCellIdentifier = @"FinishedCell";
 
 - (void)taskDidFinished:(NSNotification *)noti {
     NSDictionary *userInfo = [noti userInfo];
-    NSUInteger index = (NSUInteger)[userInfo[@"Row"] integerValue];
+    NSUInteger index = (NSUInteger)[userInfo[kRow] integerValue];
     
     Task *task = self.doingTasks[index];
     task.isFinished = YES;
@@ -113,12 +111,12 @@ static NSString * const kFinishedCellIdentifier = @"FinishedCell";
     task.record = [NSString stringWithFormat:@"%d", times + 1];
     [self.finishedTasks insertObject:task atIndex:0];
     
-    [self updateTasksDataWithRefresh:YES];
+    [self updateTasksData];
 }
 
 - (void)taskWillRestore:(NSNotification *)noti {
     NSDictionary *userInfo = [noti userInfo];
-    NSUInteger index = (NSUInteger)[userInfo[@"Row"] integerValue];
+    NSUInteger index = (NSUInteger)[userInfo[kRow] integerValue];
     
     Task *task = self.finishedTasks[index];
     task.isFinished = NO;
@@ -128,10 +126,10 @@ static NSString * const kFinishedCellIdentifier = @"FinishedCell";
     task.record = [NSString stringWithFormat:@"%d", times - 1];
     [self.doingTasks insertObject:task atIndex:0];
     
-    [self updateTasksDataWithRefresh:YES];
+    [self updateTasksData];
 }
 
-- (void)updateTasksDataWithRefresh:(BOOL)shouldRefresh {
+- (void)updateTasksData {
     NSMutableArray *allTasks = [NSMutableArray array];
     for (Task *task in self.doingTasks) {
         [allTasks addObject:task];
@@ -141,9 +139,7 @@ static NSString * const kFinishedCellIdentifier = @"FinishedCell";
     }
     [[TasksManager defaultManager] updateAllTasks:allTasks];
     
-    if (shouldRefresh) {
-        [self.tableView reloadData];
-    }
+    [self.tableView reloadData];
 }
 
 - (void)clockDidReset:(NSNotification *)noti {
@@ -216,23 +212,33 @@ static NSString * const kFinishedCellIdentifier = @"FinishedCell";
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self.doingTasks removeObjectAtIndex:indexPath.row];
-        [self updateTasksDataWithRefresh:YES];
+        [self updateTasksData];
     }
 }
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        return YES;
-    }
-    
-    return NO;
+    return YES;
 }
 
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-    Task *task = self.doingTasks[fromIndexPath.row];
-    [self.doingTasks removeObjectAtIndex:fromIndexPath.row];
-    [self.doingTasks insertObject:task atIndex:toIndexPath.row];
-    [self updateTasksDataWithRefresh:YES];
+    if (fromIndexPath.section != toIndexPath.section) {
+        [tableView reloadData];
+        [JCAlert alertWithMessage:@"对不起，您不能将已经完成的任务直接拖拉进正在进行的任务中"];
+        return;
+    }
+    
+    if (fromIndexPath.section == 0) {
+        Task *task = self.doingTasks[fromIndexPath.row];
+        [self.doingTasks removeObjectAtIndex:fromIndexPath.row];
+        [self.doingTasks insertObject:task atIndex:toIndexPath.row];
+    }
+    else {
+        Task *task = self.finishedTasks[fromIndexPath.row];
+        [self.finishedTasks removeObjectAtIndex:fromIndexPath.row];
+        [self.finishedTasks insertObject:task atIndex:toIndexPath.row];
+    }
+    
+    [self updateTasksData];
 }
 
 #pragma mark - Table view delegate

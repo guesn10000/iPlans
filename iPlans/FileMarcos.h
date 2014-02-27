@@ -13,10 +13,11 @@
 #define MYTASKS_FILE        @"MyTasks.plist"
 #define TASK_EVERYDAY_FILE  @"TasksEveryDay.plist"
 
-#define TASK_BACKGROUND @"White.jpg"
-#define TASK_ORDINARY   @"Green.jpg"
-#define TASK_IMPORTANT  @"Black.jpg"
-#define TASK_EMERGENT   @"Red.jpg"
-#define TASK_COMMAN     @"Green1.png"
+#define TASK_BACKGROUND @"0.png"
+#define TASK_ORDINARY   @"1.png"
+#define TASK_IMPORTANT  @"2.png"
+#define TASK_EMERGENT   @"3.png"
+
+#define kLengthOfImageSuffix 4
 
 #endif

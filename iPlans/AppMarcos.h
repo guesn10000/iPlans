@@ -28,4 +28,6 @@
 
 #define NSRangeZero NSMakeRange(0, 0)
 
+#define kRow @"Row"
+
 #endif

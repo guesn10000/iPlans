@@ -28,7 +28,7 @@
 
 - (IBAction)restoreTask:(id)sender {
     NSString *rowStr = [NSString stringWithFormat:@"%d", self.row];
-    NSDictionary *userInfo = @{@"Row": rowStr};
+    NSDictionary *userInfo = @{kRow: rowStr};
     [[NSNotificationCenter defaultCenter] postNotificationName:UITaskWillRestoreNotification object:self userInfo:userInfo];
 }
 

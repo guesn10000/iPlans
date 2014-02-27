@@ -10,6 +10,15 @@
 		1863CB5318BC3C4E00C95CCD /* JCAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863CB4E18BC3C4E00C95CCD /* JCAlert.m */; };
 		1863CB5418BC3C4E00C95CCD /* JCFilePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863CB5018BC3C4E00C95CCD /* JCFilePersistence.m */; };
 		1863CB5518BC3C4E00C95CCD /* JCTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863CB5218BC3C4E00C95CCD /* JCTimer.m */; };
+		188BCAB218BF2FD600E32E62 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCAAE18BF2FD600E32E62 /* 1.png */; };
+		188BCAB418BF2FD600E32E62 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCAB018BF2FD600E32E62 /* 2.png */; };
+		188BCAB818BF32C200E32E62 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCAB718BF32C200E32E62 /* 0.png */; };
+		188BCABA18BF335B00E32E62 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCAB918BF335B00E32E62 /* 3.png */; };
+		188BCAC218BF5A9D00E32E62 /* FinishTask.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCAC018BF5A9D00E32E62 /* FinishTask.png */; };
+		188BCAC318BF5A9D00E32E62 /* Loop.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCAC118BF5A9D00E32E62 /* Loop.png */; };
+		188BCAC518BF614600E32E62 /* DoTask.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCAC418BF614600E32E62 /* DoTask.png */; };
+		188BCAD118BF678E00E32E62 /* Perseverance.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCACD18BF678E00E32E62 /* Perseverance.png */; };
+		188BCAD218BF678E00E32E62 /* Todo.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCACE18BF678E00E32E62 /* Todo.png */; };
 		188FD12D18BDA50700AFAFDA /* TasksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD12C18BDA50700AFAFDA /* TasksManager.m */; };
 		188FD13018BDAB7600AFAFDA /* JCTimer+Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD12F18BDAB7600AFAFDA /* JCTimer+Clock.m */; };
 		188FD1BD18BDD43F00AFAFDA /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1BC18BDD43F00AFAFDA /* AddTaskViewController.m */; };
@@ -17,12 +26,6 @@
 		188FD1C718BE0B6F00AFAFDA /* MyTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1C618BE0B6F00AFAFDA /* MyTasksViewController.m */; };
 		188FD1CE18BE0D6B00AFAFDA /* ForegroundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1CD18BE0D6B00AFAFDA /* ForegroundCell.m */; };
 		188FD1D118BE0D7700AFAFDA /* BackgroundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1D018BE0D7700AFAFDA /* BackgroundCell.m */; };
-		188FD1DA18BE154C00AFAFDA /* Black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D318BE154C00AFAFDA /* Black.jpg */; };
-		188FD1DB18BE154C00AFAFDA /* Green.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D418BE154C00AFAFDA /* Green.jpg */; };
-		188FD1DC18BE154C00AFAFDA /* Green1.png in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D518BE154C00AFAFDA /* Green1.png */; };
-		188FD1DD18BE154C00AFAFDA /* Jymn_Chen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D618BE154C00AFAFDA /* Jymn_Chen.jpg */; };
-		188FD1DF18BE154C00AFAFDA /* Red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D818BE154C00AFAFDA /* Red.jpg */; };
-		188FD1E018BE154C00AFAFDA /* White.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1D918BE154C00AFAFDA /* White.jpg */; };
 		188FD1E318BE190A00AFAFDA /* MyTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1E218BE190A00AFAFDA /* MyTask.m */; };
 		188FD1E618BE1A5600AFAFDA /* AddMyTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1E518BE1A5600AFAFDA /* AddMyTaskViewController.m */; };
 		188FD1EB18BE1ECA00AFAFDA /* MyTasksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1EA18BE1ECA00AFAFDA /* MyTasksManager.m */; };
@@ -64,6 +67,15 @@
 		1863CB5018BC3C4E00C95CCD /* JCFilePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCFilePersistence.m; sourceTree = "<group>"; };
 		1863CB5118BC3C4E00C95CCD /* JCTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTimer.h; sourceTree = "<group>"; };
 		1863CB5218BC3C4E00C95CCD /* JCTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTimer.m; sourceTree = "<group>"; };
+		188BCAAE18BF2FD600E32E62 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		188BCAB018BF2FD600E32E62 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		188BCAB718BF32C200E32E62 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		188BCAB918BF335B00E32E62 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		188BCAC018BF5A9D00E32E62 /* FinishTask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FinishTask.png; sourceTree = "<group>"; };
+		188BCAC118BF5A9D00E32E62 /* Loop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loop.png; sourceTree = "<group>"; };
+		188BCAC418BF614600E32E62 /* DoTask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoTask.png; sourceTree = "<group>"; };
+		188BCACD18BF678E00E32E62 /* Perseverance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Perseverance.png; sourceTree = "<group>"; };
+		188BCACE18BF678E00E32E62 /* Todo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Todo.png; sourceTree = "<group>"; };
 		188FD12B18BDA50700AFAFDA /* TasksManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksManager.h; sourceTree = "<group>"; };
 		188FD12C18BDA50700AFAFDA /* TasksManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksManager.m; sourceTree = "<group>"; };
 		188FD12E18BDAB7600AFAFDA /* JCTimer+Clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JCTimer+Clock.h"; sourceTree = "<group>"; };
@@ -77,12 +89,6 @@
 		188FD1CD18BE0D6B00AFAFDA /* ForegroundCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundCell.m; sourceTree = "<group>"; };
 		188FD1CF18BE0D7700AFAFDA /* BackgroundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundCell.h; sourceTree = "<group>"; };
 		188FD1D018BE0D7700AFAFDA /* BackgroundCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundCell.m; sourceTree = "<group>"; };
-		188FD1D318BE154C00AFAFDA /* Black.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Black.jpg; sourceTree = "<group>"; };
-		188FD1D418BE154C00AFAFDA /* Green.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Green.jpg; sourceTree = "<group>"; };
-		188FD1D518BE154C00AFAFDA /* Green1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green1.png; sourceTree = "<group>"; };
-		188FD1D618BE154C00AFAFDA /* Jymn_Chen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jymn_Chen.jpg; sourceTree = "<group>"; };
-		188FD1D818BE154C00AFAFDA /* Red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Red.jpg; sourceTree = "<group>"; };
-		188FD1D918BE154C00AFAFDA /* White.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = White.jpg; sourceTree = "<group>"; };
 		188FD1E118BE190A00AFAFDA /* MyTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTask.h; sourceTree = "<group>"; };
 		188FD1E218BE190A00AFAFDA /* MyTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTask.m; sourceTree = "<group>"; };
 		188FD1E418BE1A5600AFAFDA /* AddMyTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMyTaskViewController.h; sourceTree = "<group>"; };
@@ -177,6 +183,45 @@
 			name = Marcos;
 			sourceTree = "<group>";
 		};
+		188BCABF18BF5A7A00E32E62 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				188BCAC418BF614600E32E62 /* DoTask.png */,
+				188BCAC018BF5A9D00E32E62 /* FinishTask.png */,
+				188BCAC118BF5A9D00E32E62 /* Loop.png */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		188BCAC618BF635900E32E62 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				188BCACD18BF678E00E32E62 /* Perseverance.png */,
+				188BCACE18BF678E00E32E62 /* Todo.png */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		188BCAD318BF6E5700E32E62 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				188FD1C018BDF64200AFAFDA /* TasksEveryDay.plist */,
+				18D1175F18BBA3E000D392F5 /* TaskNames.plist */,
+			);
+			name = Plists;
+			sourceTree = "<group>";
+		};
+		188BCAD418BF6E6100E32E62 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				188FD1D218BE152F00AFAFDA /* Apple */,
+				188BCAC618BF635900E32E62 /* TabBar */,
+				188BCABF18BF5A7A00E32E62 /* Buttons */,
+				18F33ECF18BB9C64007D8060 /* Images.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		188FD1B918BDCDD900AFAFDA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,12 +256,10 @@
 		188FD1D218BE152F00AFAFDA /* Apple */ = {
 			isa = PBXGroup;
 			children = (
-				188FD1D318BE154C00AFAFDA /* Black.jpg */,
-				188FD1D418BE154C00AFAFDA /* Green.jpg */,
-				188FD1D518BE154C00AFAFDA /* Green1.png */,
-				188FD1D618BE154C00AFAFDA /* Jymn_Chen.jpg */,
-				188FD1D818BE154C00AFAFDA /* Red.jpg */,
-				188FD1D918BE154C00AFAFDA /* White.jpg */,
+				188BCAB718BF32C200E32E62 /* 0.png */,
+				188BCAAE18BF2FD600E32E62 /* 1.png */,
+				188BCAB018BF2FD600E32E62 /* 2.png */,
+				188BCAB918BF335B00E32E62 /* 3.png */,
 			);
 			name = Apple;
 			sourceTree = "<group>";
@@ -340,10 +383,8 @@
 		18F33EF518BBA06A007D8060 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				188FD1D218BE152F00AFAFDA /* Apple */,
-				188FD1C018BDF64200AFAFDA /* TasksEveryDay.plist */,
-				18D1175F18BBA3E000D392F5 /* TaskNames.plist */,
-				18F33ECF18BB9C64007D8060 /* Images.xcassets */,
+				188BCAD418BF6E6100E32E62 /* Images */,
+				188BCAD318BF6E5700E32E62 /* Plists */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -463,17 +504,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				188FF7C418BCE16C0011604F /* Main_iPhone.storyboard in Resources */,
-				188FD1DB18BE154C00AFAFDA /* Green.jpg in Resources */,
-				188FD1E018BE154C00AFAFDA /* White.jpg in Resources */,
+				188BCAC218BF5A9D00E32E62 /* FinishTask.png in Resources */,
 				188FF7C518BCE16C0011604F /* Main_iPad.storyboard in Resources */,
+				188BCAC518BF614600E32E62 /* DoTask.png in Resources */,
 				188FD1C118BDF64200AFAFDA /* TasksEveryDay.plist in Resources */,
-				188FD1DC18BE154C00AFAFDA /* Green1.png in Resources */,
-				188FD1DD18BE154C00AFAFDA /* Jymn_Chen.jpg in Resources */,
 				18D1176018BBA3E000D392F5 /* TaskNames.plist in Resources */,
-				188FD1DA18BE154C00AFAFDA /* Black.jpg in Resources */,
-				188FD1DF18BE154C00AFAFDA /* Red.jpg in Resources */,
+				188BCAD118BF678E00E32E62 /* Perseverance.png in Resources */,
 				18F33ED018BB9C64007D8060 /* Images.xcassets in Resources */,
+				188BCAB418BF2FD600E32E62 /* 2.png in Resources */,
+				188BCAB818BF32C200E32E62 /* 0.png in Resources */,
+				188BCAC318BF5A9D00E32E62 /* Loop.png in Resources */,
+				188BCABA18BF335B00E32E62 /* 3.png in Resources */,
 				18F33EBF18BB9C64007D8060 /* InfoPlist.strings in Resources */,
+				188BCAB218BF2FD600E32E62 /* 1.png in Resources */,
+				188BCAD218BF678E00E32E62 /* Todo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

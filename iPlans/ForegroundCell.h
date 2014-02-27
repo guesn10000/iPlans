@@ -15,8 +15,8 @@
 - (void)configureCellAtRow:(NSUInteger)aRow TaskName:(NSString *)aName ImageID:(NSString *)aImageID;
 
 @property (weak, nonatomic) IBOutlet UIImageView *description_imageView;
-@property (weak, nonatomic) IBOutlet UILabel *taskName_label;
-@property (weak, nonatomic) IBOutlet UIButton *finish_button;
+@property (weak, nonatomic) IBOutlet UILabel     *taskName_label;
+@property (weak, nonatomic) IBOutlet UIButton    *finish_button;
 - (IBAction)finishTask:(id)sender;
 
 @end
