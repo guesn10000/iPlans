@@ -8,15 +8,17 @@
 
 #import "MyTasksViewController.h"
 #import "JCAlert.h"
+#import "JCSideMenuViewController.h"
 #import "MyTask.h"
 #import "MyTasksManager.h"
 #import "ForegroundCell.h"
 #import "BackgroundCell.h"
+#import "LeftSideViewController.h"
 
 static NSString * const kForegroundCellIdentifier = @"ForegroundCell";
 static NSString * const kBackgroundCellIdentifier = @"BackgroundCell";
 
-@interface MyTasksViewController ()
+@interface MyTasksViewController () <JCSideMenuViewControllerDelegate>
 
 @end
 
@@ -38,6 +40,8 @@ static NSString * const kBackgroundCellIdentifier = @"BackgroundCell";
     [self.refreshControl addTarget:self
                             action:@selector(controlEventValueChanged:)
                   forControlEvents:UIControlEventValueChanged];
+    
+    self.sideMenuViewController.delegate = self;
     
     
     /* 初始化数据 */
@@ -273,6 +277,20 @@ static NSString * const kBackgroundCellIdentifier = @"BackgroundCell";
     // 完成刷新
     [self.refreshControl endRefreshing];
     self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
+}
+
+#pragma mark - Gesture Actions
+
+- (IBAction)swipeRight:(id)sender {
+    [self.sideMenuViewController openMenuInSide:kLeftSide Animated:YES Completion:nil];
+}
+
+#pragma mark - JCSideMenuViewController Delegate
+
+- (void)sideMenuViewControllerWillOpenMenu:(JCSideMenuViewController *)aSideMenuViewController {
+    MyTask *task = [self.foregroundTasks firstObject];
+    LeftSideViewController *leftSideViewController = (LeftSideViewController *)aSideMenuViewController.leftMenuViewController;
+    leftSideViewController.currentTask_label.text = task.name;
 }
 
 @end

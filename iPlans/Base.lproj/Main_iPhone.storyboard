@@ -98,7 +98,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jL4-sg-xM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-440" y="-270"/>
+            <point key="canvasLocation" x="328" y="-338"/>
         </scene>
         <!--Add Task View Controller - 添加任务-->
         <scene sceneID="n1p-XQ-OEZ">
@@ -151,7 +151,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-69" y="-270"/>
+            <point key="canvasLocation" x="699" y="-338"/>
         </scene>
         <!--Navigation Controller - 毅力训练-->
         <scene sceneID="3yk-h2-ALj">
@@ -170,12 +170,48 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqj-Wv-LDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-840" y="-270"/>
+            <point key="canvasLocation" x="-72" y="-338"/>
+        </scene>
+        <!--Left Side View Controller-->
+        <scene sceneID="Dmw-aZ-N8f">
+            <objects>
+                <viewController storyboardIdentifier="LeftSideViewController" id="Ciw-lW-e9i" customClass="LeftSideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HjN-Tv-ue9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mb3-td-2Xo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Ab-IK-Ay6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="做好一件事" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5v-TS-jFA">
+                                <rect key="frame" x="20" y="71" width="150" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="做好一件事很重要" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="120" translatesAutoresizingMaskIntoConstraints="NO" id="KQX-bK-Sr0">
+                                <rect key="frame" x="20" y="139" width="120" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentTask_label" destination="KQX-bK-Sr0" id="kFE-iX-Kul"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5m-A3-RGv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1175" y="21"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="y9S-SJ-2cO">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1gy-DA-dBw" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="1gy-DA-dBw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="gVy-oA-iuD">
@@ -189,7 +225,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XzW-S1-3KM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1366" y="89"/>
+            <point key="canvasLocation" x="-598" y="21"/>
         </scene>
         <!--My Tasks View Controller - 我的任务-->
         <scene sceneID="prk-4Y-SMJ">
@@ -199,6 +235,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <prototypes>
                             <tableViewCell multipleTouchEnabled="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ForegroundCell" rowHeight="90" id="0hX-xz-CAe" customClass="ForegroundCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="90"/>
@@ -273,6 +310,7 @@
                         <connections>
                             <outlet property="dataSource" destination="Zen-VB-LCs" id="99j-fQ-iOP"/>
                             <outlet property="delegate" destination="Zen-VB-LCs" id="avM-eD-QID"/>
+                            <outletCollection property="gestureRecognizers" destination="0Oj-mx-RKV" appends="YES" id="rFC-dP-9KY"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="我的任务" id="FO4-aM-8dk">
@@ -282,10 +320,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="swipeRightGesture" destination="0Oj-mx-RKV" id="iul-LV-WN4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZe-sx-HdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="0Oj-mx-RKV">
+                    <connections>
+                        <action selector="swipeRight:" destination="Zen-VB-LCs" id="V2Q-ZX-OAh"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-440" y="427"/>
+            <point key="canvasLocation" x="328" y="359"/>
         </scene>
         <!--Add My Task View Controller - 添加任务-->
         <scene sceneID="kWi-kh-Tag">
@@ -348,7 +394,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-69" y="427"/>
+            <point key="canvasLocation" x="699" y="359"/>
         </scene>
         <!--Navigation Controller - 我的任务-->
         <scene sceneID="O0t-UD-bZD">
@@ -367,7 +413,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcP-6C-Hx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-840" y="427"/>
+            <point key="canvasLocation" x="-72" y="359"/>
         </scene>
     </scenes>
     <resources>

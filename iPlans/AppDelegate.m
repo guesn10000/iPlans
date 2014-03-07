@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "JCSideMenuViewController.h"
 #import "TasksManager.h"
+#import "LeftSideViewController.h"
 
 #ifdef APP_INITIALIZE
     #import "Task.h"
@@ -32,9 +34,22 @@
         NSLog(@"Succeed");
 #endif
     
+    LeftSideViewController *leftSideViewController = [[UIStoryboard storyboardWithName:STORYBOARD_NAME bundle:nil]
+                                                      instantiateViewControllerWithIdentifier:LEFT_SIDE_VIEWCONTROLLER_ID];
+    
+    UITabBarController *tabBarController = [[UIStoryboard storyboardWithName:STORYBOARD_NAME bundle:nil]
+                                            instantiateViewControllerWithIdentifier:TABBAR_VIEWCONTROLLER_ID];
+    
+    JCSideMenuViewController *sideMenuViewController = [[JCSideMenuViewController alloc]
+                                                        initWithLeftMenuViewController:leftSideViewController
+                                                        MainViewController:tabBarController
+                                                        RightMenuViewController:nil];
+    
+    self.window.rootViewController = sideMenuViewController;
+    
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

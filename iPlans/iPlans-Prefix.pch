@@ -15,4 +15,5 @@
     #import <Foundation/Foundation.h>
     #import "AppMarcos.h"
     #import "FileMarcos.h"
+    #import "IBMarcos.h"
 #endif
