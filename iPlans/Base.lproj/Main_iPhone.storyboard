@@ -86,6 +86,7 @@
                         <connections>
                             <outlet property="dataSource" destination="aTp-0U-X3x" id="ljq-Sc-Q40"/>
                             <outlet property="delegate" destination="aTp-0U-X3x" id="qcY-R0-cn0"/>
+                            <outletCollection property="gestureRecognizers" destination="vXy-wR-HrR" appends="YES" id="cnA-IB-wcC"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="坚持毅力训练" id="G4g-Gn-boC">
@@ -95,8 +96,16 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="swipeRightGesture" destination="vXy-wR-HrR" id="fQf-4E-wqI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jL4-sg-xM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="vXy-wR-HrR">
+                    <connections>
+                        <action selector="swipeRight:" destination="aTp-0U-X3x" id="J6T-8l-MrC"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="328" y="-338"/>
         </scene>

@@ -24,6 +24,25 @@ static NSString * const kBackgroundCellIdentifier = @"BackgroundCell";
 
 @implementation MyTasksViewController
 
+#pragma mark - Initialization
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        /**
+         TasksViewController中的swipe手势在呼出侧边视图时，本类中的foregroundTasks必须已经加载
+         
+         由于本类由TabBarViewController控制，在点击TaBarItem打开本类之前，viewDidLoad方法不会被调用
+         
+         所以loadTasks的任务必须放在初始化方法中执行
+         */
+        [self loadTasksFromFile];
+    }
+    
+    return self;
+}
+
 #pragma mark - View life cycle
 
 - (void)viewDidLoad {
@@ -44,9 +63,15 @@ static NSString * const kBackgroundCellIdentifier = @"BackgroundCell";
     self.sideMenuViewController.delegate = self;
     
     
-    /* 初始化数据 */
+    /**
+     初始化数据
+     
+     为了避免重复初始化（initWithCoder:方法中已经执行了），造成读磁盘时浪费资源，这里先做一个判断
+     */
     
-    [self loadTasksFromFile];
+    if (!self.foregroundTasks || !self.backgroundTasks) {
+        [self loadTasksFromFile];
+    }
     
     
     /* 开始监听消息 */
@@ -282,6 +307,16 @@ static NSString * const kBackgroundCellIdentifier = @"BackgroundCell";
 #pragma mark - Gesture Actions
 
 - (IBAction)swipeRight:(id)sender {
+    /**
+     在程序刚刚加载时，self.sideMenuViewController.delegate无法设置为self（在initWithCoder:方法中设置无效）
+     
+     而用户可能在TasksViewController中使用swipe手势
+     
+     所以这里如果delegate == nil，必须要主动调用WillOpenMenu中的方法
+     */
+    if (!self.sideMenuViewController.delegate) {
+        [self sideMenuViewControllerWillOpenMenu:self.sideMenuViewController];
+    }
     [self.sideMenuViewController openMenuInSide:kLeftSide Animated:YES Completion:nil];
 }
 

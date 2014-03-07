@@ -12,6 +12,7 @@
 #import "TasksManager.h"
 #import "DoingCell.h"
 #import "FinishedCell.h"
+#import "MyTasksViewController.h"
 
 static NSString * const kDoingCellIdentifier    = @"DoingCell";
 static NSString * const kFinishedCellIdentifier = @"FinishedCell";
@@ -250,6 +251,15 @@ static NSString * const kFinishedCellIdentifier = @"FinishedCell";
     else {
         return UITableViewCellEditingStyleNone;
     }
+}
+
+#pragma mark - Gesture Actions
+
+- (IBAction)swipeRight:(id)sender {
+    UITabBarController     *tabBarController     = self.navigationController.tabBarController;
+    UINavigationController *navigationController = (UINavigationController *)tabBarController.viewControllers[1];
+    MyTasksViewController  *aMyTasksController   = (MyTasksViewController *)navigationController.topViewController;
+    [aMyTasksController swipeRight:nil];
 }
 
 @end

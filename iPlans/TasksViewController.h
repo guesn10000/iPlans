@@ -14,4 +14,6 @@
 
 @property (strong, nonatomic) NSMutableArray *finishedTasks;
 
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeRightGesture;
+- (IBAction)swipeRight:(id)sender;
 @end
