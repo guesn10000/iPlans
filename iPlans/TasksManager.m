@@ -6,11 +6,11 @@
 //  Copyright (c) 2014年 Jymn_Chen. All rights reserved.
 //
 
+#import <JuliaCore/JuliaCore.h>
 #import "TasksManager.h"
 #import "Task.h"
-#import "JCTimer.h"
 #import "JCTimer+Clock.h"
-#import "JCFilePersistence.h"
+#import "JCLocalNotificationCenter+DailyTasks.h"
 
 @implementation TasksManager
 
@@ -80,6 +80,7 @@
 
 - (void)verifyTimestamp {
     JCTimer *timer = [JCTimer sharedInstance];
+    // 如果超过当天的凌晨一点，就刷新每天的任务列表
     if ([timer shouldUpdateClock]) {
         JCFilePersistence *filePersistence = [JCFilePersistence sharedInstance];
         NSString *tasksFilePath = [filePersistence getDirectoryOfDocumentFileWithName:TASKS_FILE];
@@ -100,8 +101,13 @@
             [filePersistence saveMutableData:fileData toDocumentFile:TASKS_FILE];
         }
         
+        // 重置刷新时间
         [timer setClock];
         
+        // 重置今天的本地通知
+        [[JCLocalNotificationCenter defaultCenter] resetDailyTasksNotification];
+        
+        // 通知UI更新界面
         [[NSNotificationCenter defaultCenter] postNotificationName:UIClockDidResetNotification object:nil];
     }
 }

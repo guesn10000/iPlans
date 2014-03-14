@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1863CB5318BC3C4E00C95CCD /* JCAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863CB4E18BC3C4E00C95CCD /* JCAlert.m */; };
-		1863CB5418BC3C4E00C95CCD /* JCFilePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863CB5018BC3C4E00C95CCD /* JCFilePersistence.m */; };
-		1863CB5518BC3C4E00C95CCD /* JCTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863CB5218BC3C4E00C95CCD /* JCTimer.m */; };
+		18187BFF18D071130044C6FB /* JCLocalNotificationCenter+DailyTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 18187BFE18D071130044C6FB /* JCLocalNotificationCenter+DailyTasks.m */; };
+		181C9BCD18D2D2D400719EE7 /* JuliaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181C9BCC18D2D2D400719EE7 /* JuliaCore.framework */; };
+		181C9BD518D2DA2000719EE7 /* TasksEveryDay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 181C9BD418D2DA2000719EE7 /* TasksEveryDay.plist */; };
 		188BCAB218BF2FD600E32E62 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCAAE18BF2FD600E32E62 /* 1.png */; };
 		188BCAB418BF2FD600E32E62 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCAB018BF2FD600E32E62 /* 2.png */; };
 		188BCAB818BF32C200E32E62 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 188BCAB718BF32C200E32E62 /* 0.png */; };
@@ -22,7 +22,6 @@
 		188FD12D18BDA50700AFAFDA /* TasksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD12C18BDA50700AFAFDA /* TasksManager.m */; };
 		188FD13018BDAB7600AFAFDA /* JCTimer+Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD12F18BDAB7600AFAFDA /* JCTimer+Clock.m */; };
 		188FD1BD18BDD43F00AFAFDA /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1BC18BDD43F00AFAFDA /* AddTaskViewController.m */; };
-		188FD1C118BDF64200AFAFDA /* TasksEveryDay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188FD1C018BDF64200AFAFDA /* TasksEveryDay.plist */; };
 		188FD1C718BE0B6F00AFAFDA /* MyTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1C618BE0B6F00AFAFDA /* MyTasksViewController.m */; };
 		188FD1CE18BE0D6B00AFAFDA /* ForegroundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1CD18BE0D6B00AFAFDA /* ForegroundCell.m */; };
 		188FD1D118BE0D7700AFAFDA /* BackgroundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FD1D018BE0D7700AFAFDA /* BackgroundCell.m */; };
@@ -35,7 +34,6 @@
 		188FF7C518BCE16C0011604F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F33EC918BB9C64007D8060 /* Main_iPad.storyboard */; };
 		1892C0E718C9906D005BD04A /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1892C0E618C9906D005BD04A /* galaxy.png */; };
 		1892C0EB18C9910A005BD04A /* LeftSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1892C0EA18C9910A005BD04A /* LeftSideViewController.m */; };
-		1892C0EE18C99152005BD04A /* JCSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1892C0ED18C99152005BD04A /* JCSideMenuViewController.m */; };
 		18D1176018BBA3E000D392F5 /* TaskNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18D1175F18BBA3E000D392F5 /* TaskNames.plist */; };
 		18D1176318BBA44A00D392F5 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D1176218BBA44A00D392F5 /* Task.m */; };
 		18F33EB518BB9C64007D8060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F33EB418BB9C64007D8060 /* Foundation.framework */; };
@@ -64,12 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1863CB4D18BC3C4E00C95CCD /* JCAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAlert.h; sourceTree = "<group>"; };
-		1863CB4E18BC3C4E00C95CCD /* JCAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAlert.m; sourceTree = "<group>"; };
-		1863CB4F18BC3C4E00C95CCD /* JCFilePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCFilePersistence.h; sourceTree = "<group>"; };
-		1863CB5018BC3C4E00C95CCD /* JCFilePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCFilePersistence.m; sourceTree = "<group>"; };
-		1863CB5118BC3C4E00C95CCD /* JCTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTimer.h; sourceTree = "<group>"; };
-		1863CB5218BC3C4E00C95CCD /* JCTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTimer.m; sourceTree = "<group>"; };
+		18187BFD18D071130044C6FB /* JCLocalNotificationCenter+DailyTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JCLocalNotificationCenter+DailyTasks.h"; sourceTree = "<group>"; };
+		18187BFE18D071130044C6FB /* JCLocalNotificationCenter+DailyTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JCLocalNotificationCenter+DailyTasks.m"; sourceTree = "<group>"; };
+		181C9BCC18D2D2D400719EE7 /* JuliaCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JuliaCore.framework; path = iPlans/JuliaCore.framework; sourceTree = "<group>"; };
+		181C9BD418D2DA2000719EE7 /* TasksEveryDay.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = TasksEveryDay.plist; sourceTree = "<group>"; };
 		188BCAAE18BF2FD600E32E62 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		188BCAB018BF2FD600E32E62 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		188BCAB718BF32C200E32E62 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
@@ -85,7 +81,6 @@
 		188FD12F18BDAB7600AFAFDA /* JCTimer+Clock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JCTimer+Clock.m"; sourceTree = "<group>"; };
 		188FD1BB18BDD43F00AFAFDA /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
 		188FD1BC18BDD43F00AFAFDA /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
-		188FD1C018BDF64200AFAFDA /* TasksEveryDay.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = TasksEveryDay.plist; sourceTree = "<group>"; };
 		188FD1C518BE0B6F00AFAFDA /* MyTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTasksViewController.h; sourceTree = "<group>"; };
 		188FD1C618BE0B6F00AFAFDA /* MyTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTasksViewController.m; sourceTree = "<group>"; };
 		188FD1CC18BE0D6B00AFAFDA /* ForegroundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundCell.h; sourceTree = "<group>"; };
@@ -105,8 +100,6 @@
 		1892C0E618C9906D005BD04A /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxy.png; sourceTree = "<group>"; };
 		1892C0E918C9910A005BD04A /* LeftSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSideViewController.h; sourceTree = "<group>"; };
 		1892C0EA18C9910A005BD04A /* LeftSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSideViewController.m; sourceTree = "<group>"; };
-		1892C0EC18C99152005BD04A /* JCSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCSideMenuViewController.h; sourceTree = "<group>"; };
-		1892C0ED18C99152005BD04A /* JCSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSideMenuViewController.m; sourceTree = "<group>"; };
 		1892C0EF18C992F2005BD04A /* IBMarcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBMarcos.h; sourceTree = "<group>"; };
 		18B0A6B318BCE69600255C89 /* AppMarcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMarcos.h; sourceTree = "<group>"; };
 		18B0A6B418BCF03E00255C89 /* FileMarcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileMarcos.h; sourceTree = "<group>"; };
@@ -141,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F33EB718BB9C64007D8060 /* CoreGraphics.framework in Frameworks */,
+				181C9BCD18D2D2D400719EE7 /* JuliaCore.framework in Frameworks */,
 				18F33EB918BB9C64007D8060 /* UIKit.framework in Frameworks */,
 				18F33EB518BB9C64007D8060 /* Foundation.framework in Frameworks */,
 			);
@@ -159,21 +153,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1863CB5618BC3C5000C95CCD /* JuliaCore */ = {
+		1813D71B18D1649C00ADFBC3 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				1863CB4D18BC3C4E00C95CCD /* JCAlert.h */,
-				1863CB4E18BC3C4E00C95CCD /* JCAlert.m */,
-				1863CB4F18BC3C4E00C95CCD /* JCFilePersistence.h */,
-				1863CB5018BC3C4E00C95CCD /* JCFilePersistence.m */,
-				1863CB5118BC3C4E00C95CCD /* JCTimer.h */,
-				1863CB5218BC3C4E00C95CCD /* JCTimer.m */,
 				188FD12E18BDAB7600AFAFDA /* JCTimer+Clock.h */,
 				188FD12F18BDAB7600AFAFDA /* JCTimer+Clock.m */,
-				1892C0EC18C99152005BD04A /* JCSideMenuViewController.h */,
-				1892C0ED18C99152005BD04A /* JCSideMenuViewController.m */,
+				18187BFD18D071130044C6FB /* JCLocalNotificationCenter+DailyTasks.h */,
+				18187BFE18D071130044C6FB /* JCLocalNotificationCenter+DailyTasks.m */,
 			);
-			name = JuliaCore;
+			name = Notifications;
 			sourceTree = "<group>";
 		};
 		1863CB5718BC3C5F00C95CCD /* Task */ = {
@@ -217,7 +205,7 @@
 		188BCAD318BF6E5700E32E62 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
-				188FD1C018BDF64200AFAFDA /* TasksEveryDay.plist */,
+				181C9BD418D2DA2000719EE7 /* TasksEveryDay.plist */,
 				18D1175F18BBA3E000D392F5 /* TaskNames.plist */,
 			);
 			name = Plists;
@@ -360,6 +348,7 @@
 		18F33EB318BB9C64007D8060 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				181C9BCC18D2D2D400719EE7 /* JuliaCore.framework */,
 				18F33EB418BB9C64007D8060 /* Foundation.framework */,
 				18F33EB618BB9C64007D8060 /* CoreGraphics.framework */,
 				18F33EB818BB9C64007D8060 /* UIKit.framework */,
@@ -443,8 +432,8 @@
 			isa = PBXGroup;
 			children = (
 				1863CB5918BC3CB900C95CCD /* Marcos */,
-				1863CB5618BC3C5000C95CCD /* JuliaCore */,
 				1863CB5718BC3C5F00C95CCD /* Task */,
+				1813D71B18D1649C00ADFBC3 /* Notifications */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -539,7 +528,6 @@
 				188FF7C518BCE16C0011604F /* Main_iPad.storyboard in Resources */,
 				1892C0E718C9906D005BD04A /* galaxy.png in Resources */,
 				188BCAC518BF614600E32E62 /* DoTask.png in Resources */,
-				188FD1C118BDF64200AFAFDA /* TasksEveryDay.plist in Resources */,
 				18D1176018BBA3E000D392F5 /* TaskNames.plist in Resources */,
 				188BCAD118BF678E00E32E62 /* Perseverance.png in Resources */,
 				18F33ED018BB9C64007D8060 /* Images.xcassets in Resources */,
@@ -547,6 +535,7 @@
 				188BCAB818BF32C200E32E62 /* 0.png in Resources */,
 				188BCAC318BF5A9D00E32E62 /* Loop.png in Resources */,
 				188BCABA18BF335B00E32E62 /* 3.png in Resources */,
+				181C9BD518D2DA2000719EE7 /* TasksEveryDay.plist in Resources */,
 				18F33EBF18BB9C64007D8060 /* InfoPlist.strings in Resources */,
 				188BCAB218BF2FD600E32E62 /* 1.png in Resources */,
 				188BCAD218BF678E00E32E62 /* Todo.png in Resources */,
@@ -568,20 +557,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1863CB5418BC3C4E00C95CCD /* JCFilePersistence.m in Sources */,
 				188FF72A18BCB0EF0011604F /* DoingCell.m in Sources */,
 				188FD12D18BDA50700AFAFDA /* TasksManager.m in Sources */,
 				188FD1BD18BDD43F00AFAFDA /* AddTaskViewController.m in Sources */,
 				18F33EFE18BBA19D007D8060 /* main.m in Sources */,
-				1863CB5518BC3C4E00C95CCD /* JCTimer.m in Sources */,
 				188FD1C718BE0B6F00AFAFDA /* MyTasksViewController.m in Sources */,
-				1892C0EE18C99152005BD04A /* JCSideMenuViewController.m in Sources */,
 				188FD1E618BE1A5600AFAFDA /* AddMyTaskViewController.m in Sources */,
-				1863CB5318BC3C4E00C95CCD /* JCAlert.m in Sources */,
 				18F33EFA18BBA142007D8060 /* AppDelegate.m in Sources */,
 				188FD1EB18BE1ECA00AFAFDA /* MyTasksManager.m in Sources */,
 				188FD13018BDAB7600AFAFDA /* JCTimer+Clock.m in Sources */,
 				188FD1CE18BE0D6B00AFAFDA /* ForegroundCell.m in Sources */,
+				18187BFF18D071130044C6FB /* JCLocalNotificationCenter+DailyTasks.m in Sources */,
 				188FF72E18BCB1870011604F /* FinishedCell.m in Sources */,
 				1892C0EB18C9910A005BD04A /* LeftSideViewController.m in Sources */,
 				188FD1E318BE190A00AFAFDA /* MyTask.m in Sources */,
@@ -724,9 +710,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/apple/Desktop/iPlans,
+					/Users/apple/Desktop/iPlans/iPlans,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPlans/iPlans-Prefix.pch";
 				INFOPLIST_FILE = "iPlans/iPlans-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -737,9 +729,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/apple/Desktop/iPlans,
+					/Users/apple/Desktop/iPlans/iPlans,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPlans/iPlans-Prefix.pch";
 				INFOPLIST_FILE = "iPlans/iPlans-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

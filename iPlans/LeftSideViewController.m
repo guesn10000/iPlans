@@ -7,7 +7,7 @@
 //
 
 #import "LeftSideViewController.h"
-#import "JCSideMenuViewController.h"
+#import <JuliaCore/JCSideMenuViewController.h>
 
 @interface LeftSideViewController ()
 
@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _backgroundImage = [UIImage imageNamed:@"galaxy"];
+    _backgroundImage = [UIImage imageNamed:GALAXY_BACKGROUND];
     [self addBackgroundImage:_backgroundImage];
 }
 

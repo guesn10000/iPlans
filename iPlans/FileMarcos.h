@@ -20,4 +20,6 @@
 
 #define kLengthOfImageSuffix 4
 
+#define GALAXY_BACKGROUND @"galaxy.png"
+
 #endif

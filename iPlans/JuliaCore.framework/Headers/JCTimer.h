@@ -8,14 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#define JCEarlier 0
-#define JCSame    1
-#define JCLater   2
-
-#define WEEK_TIMEINTERVAL   7.0  * DAY_TIMEINTERVAL
-#define DAY_TIMEINTERVAL    24.0 * HOUR_TIMEINTERVAL
-#define HOUR_TIMEINTERVAL   60.0 * MINUTE_TIMEINTERVAL
-#define MINUTE_TIMEINTERVAL 60.0
+typedef NS_ENUM(NSUInteger, JCTimeCompareResult) {
+    kJCEarlier = 0,
+    kJCSame    = 1,
+    kJCLater   = 2
+};
 
 @interface JCTimer : NSObject
 
@@ -34,6 +31,6 @@
 - (NSDate *)getDateFrom_yyMMddhhmmss_String:(NSString *)dateString;
 
 /* 比较两个日期并返回结果 */
-- (NSUInteger)compareDate:(NSDate *)firstDate toDate:(NSDate *)nextDate;
+- (JCTimeCompareResult)compareDate:(NSDate *)firstDate toDate:(NSDate *)nextDate;
 
 @end

@@ -21,9 +21,9 @@
 @end
 
 typedef NS_ENUM(NSInteger, JCSide) {
-    kRightSide  = -1,
-    kMiddleSide =  0,
-    kLeftSide   =  1
+    kJCRightSide  = -1,
+    kJCMiddleSide =  0,
+    kJCLeftSide   =  1
 };
 
 @interface JCSideMenuViewController : UIViewController

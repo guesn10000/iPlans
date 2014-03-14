@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 Jymn_Chen. All rights reserved.
 //
 
+#import <JuliaCore/JCAlert.h>
 #import "TasksViewController.h"
-#import "JCAlert.h"
 #import "Task.h"
 #import "TasksManager.h"
 #import "DoingCell.h"
@@ -36,7 +36,6 @@ static NSString * const kFinishedCellIdentifier = @"FinishedCell";
     
     
     /* 初始化数据 */
-    
     [self loadTasksFromFile];
     
     
@@ -88,10 +87,7 @@ static NSString * const kFinishedCellIdentifier = @"FinishedCell";
 }
 
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UITaskDidFinishedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UITaskWillRestoreNotification object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIClockDidResetNotification   object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UINewTaskDidAddNotification   object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {

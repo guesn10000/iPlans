@@ -9,9 +9,8 @@
 #ifndef iPlans_AppMarcos_h
 #define iPlans_AppMarcos_h
 
-#if 0
-#define APP_INITIALIZE 1
-#endif
+#define kAppState    @"AppState"
+#define kInitialized @"Initialized"
 
 #define UITaskDidFinishedNotification @"TaskDidFinishedNotification"
 #define UITaskWillRestoreNotification @"TaskWillRestoreNotification"

@@ -7,8 +7,8 @@
 //
 
 #import "MyTasksViewController.h"
-#import "JCAlert.h"
-#import "JCSideMenuViewController.h"
+#import <JuliaCore/JCAlert.h>
+#import <JuliaCore/JCSideMenuViewController.h>
 #import "MyTask.h"
 #import "MyTasksManager.h"
 #import "ForegroundCell.h"
@@ -110,9 +110,7 @@ static NSString * const kBackgroundCellIdentifier = @"BackgroundCell";
 }
 
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIMyTaskDidFinishedNotification         object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIMyTaskWillEnterForegroundNotification object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UINewMyTaskDidAddNotification           object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -317,7 +315,7 @@ static NSString * const kBackgroundCellIdentifier = @"BackgroundCell";
     if (!self.sideMenuViewController.delegate) {
         [self sideMenuViewControllerWillOpenMenu:self.sideMenuViewController];
     }
-    [self.sideMenuViewController openMenuInSide:kLeftSide Animated:YES Completion:nil];
+    [self.sideMenuViewController openMenuInSide:kJCLeftSide Animated:YES Completion:nil];
 }
 
 #pragma mark - JCSideMenuViewController Delegate

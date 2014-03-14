@@ -32,7 +32,7 @@
 }
 
 - (IBAction)finishTask:(id)sender {
-    NSString *rowStr = [NSString stringWithFormat:@"%d", self.row];
+    NSString *rowStr = [NSString stringWithFormat:@"%lu", (unsigned long)self.row];
     NSDictionary *userInfo = @{kRow: rowStr};
     [[NSNotificationCenter defaultCenter] postNotificationName:UITaskDidFinishedNotification object:self userInfo:userInfo];
 }

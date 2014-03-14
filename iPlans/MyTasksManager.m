@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 Jymn_Chen. All rights reserved.
 //
 
+#import <JuliaCore/JCFilePersistence.h>
 #import "MyTasksManager.h"
 #import "MyTask.h"
-#import "JCFilePersistence.h"
 
 @implementation MyTasksManager
 
